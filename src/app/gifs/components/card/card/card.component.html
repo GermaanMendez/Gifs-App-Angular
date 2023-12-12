@@ -1,0 +1,16 @@
+        <!-- Boostrap maneja el ancho de la pantalla dividiendo a la misma en 12 columnas,
+        en este caso lo que digo es que si el tamanio es medium a cada elemento div se le asigne
+        un ancho de 3 de estas 12 columnas, por lo tanto en pantalla me quedaran 4 elementos divs
+        luego digo que si el ancho es small le asigne 6 columnas de las 12 a cada item por lo tanto en total me quedaran solo 2 por cada fila
+        esto es asi porque de esta forma es como boostrap maneja el ancho de la pantalla -->
+            <div class="card mb-2 bg-dark text-center ">
+    
+                <shared-lazy-image [url]="gif!.images.original.url" [alt]="gif!.title"></shared-lazy-image>
+                <!-- <div class="card-img width-70">
+                    <img [src]="gif?.images?.original?.url" class="img-fluid" alt="gif.title" >
+                </div> -->
+    
+                <div class="card-body  text-white ">
+                    <small class="card-text ">{{gif?.title || 'No Title'}}</small>
+                </div>
+            </div>

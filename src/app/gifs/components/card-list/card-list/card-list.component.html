@@ -1,0 +1,14 @@
+
+
+<div class="row">
+        <!-- Boostrap maneja el ancho de la pantalla dividiendo a la misma en 12 columnas,
+        en este caso lo que digo es que si el tamanio es medium a cada elemento div se le asigne
+        un ancho de 3 de estas 12 columnas, por lo tanto en pantalla me quedaran 4 elementos divs
+        luego digo que si el ancho es small le asigne 6 columnas de las 12 a cada item por lo tanto en total me quedaran solo 2 por cada fila
+        esto es asi porque de esta forma es como boostrap maneja el ancho de la pantalla -->
+  
+    <gif-card-component *ngFor="let gif of gifList" [gif]="gif"
+                        class="col-md-3 col-sm-6"
+    ></gif-card-component>
+
+</div>
