@@ -2,15 +2,15 @@
 <!-- el evento (load) es un evento propio de las imagenes y este evento se ejecuta
     cuando la imagen se ha cargado por completo -->
 <div class="d-flex justify-content-center">
-    
+
     <!-- Con el ngStyle le asigno styles en base a una condicion, si la imagen todavia no se ha cargado el no se muestra por eso pongo display none -->
-    <img [src]="url" class="card-img-top animate__animated animate__fadeIn" [alt]="alt" [ngStyle]="{display:hasLoaded ? '' : 'none'}"/>
+     <img [src]="url" class="card-img-top animate__animated animate__fadeIn" [alt]="alt" /> <!--[ngStyle]="{display:hasLoaded ? '' : 'none'}"/> -->
 
     <!-- Solo se muestra el spinner de carga si la imagen todavia no ha cargado -->
-    <img *ngIf="!hasLoaded"
-         src="assets/loader.svg" alt="loader"
+    <!-- <img *ngIf="!hasLoaded"
+         src="./assets/loader.svg" alt="loader"
          height="35" width="35" class="mt-2 "
-         (load)="OnLoad()">
+         (load)="OnLoad()"> -->
 </div>
 
 
