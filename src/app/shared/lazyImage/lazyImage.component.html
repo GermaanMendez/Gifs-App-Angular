@@ -7,10 +7,10 @@
      <img [src]="url" class="card-img-top animate__animated animate__fadeIn" [alt]="alt" /> <!--[ngStyle]="{display:hasLoaded ? '' : 'none'}"/> -->
 
     <!-- Solo se muestra el spinner de carga si la imagen todavia no ha cargado -->
-    <!-- <img *ngIf="!hasLoaded"
+    <img *ngIf="!hasLoaded"
          src="./assets/loader.svg" alt="loader"
          height="35" width="35" class="mt-2 "
-         (load)="OnLoad()"> -->
+         (load)="OnLoad()">update docs
 </div>
 
 
